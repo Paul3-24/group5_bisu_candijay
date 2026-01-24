@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BISU Intramurals Event Registration and Leaderboard Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+        <img src="bisu-logo.png" alt="BISU Logo">
+        <p>
+            BISU Intramurals Event<br>
+            Registration and Leaderboard<br>
+            Management System
+        </p>
+    </div>
+
+
+<div class="right">
+
+        <div class="form-slider" id="slider">
+
+            <!-- SIGN IN -->
+            <div class="form">
+                <form action="login.php" method="POST">
+                <h1>Sign In</h1>
+                <input type="email" class="input" id="loginEmail" placeholder="Email">
+                <input type="password" class="input" id="loginPassword" placeholder="Password">
+                <button onclick="login()">LOGIN</button>
+
+                <div class="link">
+                    Don’t have an account? <a onclick="showSignup()">Sign Up</a>
+                </div>
+                </form>
+            </div>
+
+            <!-- SIGN UP -->
+            <div class="form">
+              <form action="signup.php" method="POST">
+                <h1>Sign Up</h1>
+                <input type="text" class="input" id="signupFirstName" placeholder="First Name">
+                <input type="text" class="input" id="signupLastName" placeholder="Last Name">
+                <input type="email" class="input" id="signupEmail" placeholder="Email">
+                <input type="password" class="input" id="signupPassword" placeholder="Password">
+                <input type="password" class="input" id="signupConfirm" placeholder="Confirm Password">
+                <button onclick="signup()">SUBMIT</button>
+
+                <div class="link">
+                    Already have an account? <a onclick="showLogin()">Sign In</a>
+                </div>
+              </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

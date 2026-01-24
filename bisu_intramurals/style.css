@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN CARD */
+.card {
+    width: 920px;
+    height: 540px;
+    background: #cfd0d5;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* LEFT PANEL */
+.left {
+    width: 45%;
+    background: #2d55da;
+    border-top-right-radius: 140px;
+    border-bottom-right-radius: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.left img {
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.left p {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+/* RIGHT PANEL */
+.right {
+    width: 55%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SLIDER */
+.form-slider {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+/* FORMS */
+.form {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* INPUTS */
+.input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: none;
+    background: #e6e6e6;
+    font-size: 15px;
+}
+
+
+button {
+    width: 140px;
+    padding: 12px;
+    background: #2d55da;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #2348b8;
+}
+
+/* LINKS */
+.link {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.link a {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
