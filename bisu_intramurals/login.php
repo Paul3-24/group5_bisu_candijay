@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["name"] = $row["first_name"];
 
             echo "Login successful!";
-            // header("Location: dashboard.php");
+            
         } else {
             echo "Invalid password!";
         }
