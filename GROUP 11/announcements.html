@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - BISU Intramurals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="admin-header">
+                <div class="admin-avatar"></div>
+                <span class="admin-text">ADMIN</span>
+            </div>
+            <hr class="divider">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+                <a href="events.html" class="nav-item">Events</a>
+                <a href="leaderboard.html" class="nav-item">Leaderboard</a>
+                <a href="participants.html" class="nav-item">Participants</a>
+                <a href="announcements.html" class="nav-item active">Announcements</a>
+                <a href="index.html" class="nav-item" id="logoutBtn">Log Out</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>ANNOUNCEMENTS</h1>
+                <hr class="header-divider">
+            </div>
+
+            <div class="page-controls">
+                <button class="btn-add" id="addAnnouncementBtn">+ Add Announcement</button>
+            </div>
+
+            <div class="announcements-list" id="announcementsList">
+                <!-- Announcements will be dynamically loaded -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Add Announcement Modal -->
+    <div class="modal" id="announcementModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Announcement</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <form id="announcementForm">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="announcementTitle" required>
+                </div>
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea id="announcementContent" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Add Announcement</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="announcements.js"></script>
+</body>
+</html>

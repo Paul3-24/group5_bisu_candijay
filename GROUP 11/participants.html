@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants - BISU Intramurals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="admin-header">
+                <div class="admin-avatar"></div>
+                <span class="admin-text">ADMIN</span>
+            </div>
+            <hr class="divider">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+                <a href="events.html" class="nav-item">Events</a>
+                <a href="leaderboard.html" class="nav-item">Leaderboard</a>
+                <a href="participants.html" class="nav-item active">Participants</a>
+                <a href="announcements.html" class="nav-item">Announcements</a>
+                <a href="index.html" class="nav-item" id="logoutBtn">Log Out</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>PARTICIPANTS</h1>
+                <hr class="header-divider">
+            </div>
+
+            <div class="participants-container">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search by name, email, or age..." class="search-input">
+                </div>
+
+                <table class="participants-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="participantsBody">
+                        <!-- Rows will be dynamically loaded -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="participants.js"></script>
+</body>
+</html>

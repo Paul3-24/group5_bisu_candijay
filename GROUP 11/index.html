@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - BISU Intramurals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="left-panel">
+                <div class="logo-container">
+                    <img src="" alt="BISU Intramurals Logo" class="logo">
+                </div>
+                <div class="system-title">
+                    <p>BISU Intramurals Event</p>
+                    <p>Registration and Leaderboard Management System</p>
+                </div>
+            </div>
+            <div class="right-panel">
+                <h1 class="title">Log In</h1>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div id="errorMessage" class="error-message"></div>
+                    <button type="submit" class="btn-primary">LOGIN</button>
+                </form>
+                <div class="footer-text">
+                    <span>Don't have an account? </span>
+                    <a href="signup.html" class="link-bold">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

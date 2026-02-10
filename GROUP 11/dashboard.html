@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BISU Intramurals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="admin-header">
+                <div class="admin-avatar"></div>
+                <span class="admin-text">ADMIN</span>
+            </div>
+            <hr class="divider">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">Dashboard</a>
+                <a href="events.html" class="nav-item">Events</a>
+                <a href="leaderboard.html" class="nav-item">Leaderboard</a>
+                <a href="participants.html" class="nav-item">Participants</a>
+                <a href="announcements.html" class="nav-item">Announcements</a>
+                <a href="index.html" class="nav-item" id="logoutBtn">Log Out</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>DASHBOARD</h1>
+                <hr class="header-divider">
+            </div>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <div class="stat-info">
+                        <p class="stat-label">Total Registers</p>
+                        <p class="stat-value" id="totalRegisters">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"></div>
+                    <div class="stat-info">
+                        <p class="stat-label">Total Events</p>
+                        <p class="stat-value">2</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
